@@ -11,10 +11,10 @@ baseurl: ""
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
-username: bySeiren02
+username: Seiren
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: bySeiren02
+typing_text: Seiren's Dubbing Diary
 # email: Your E-Mail address for the email button.
 email: byseiren@naver.com
 # For every social button you want to display, set your username or userid
@@ -32,9 +32,14 @@ twitter_username: bySeiren02
 # > setting this to false, will omit the About Me section
 show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
-about_me_title: About Me
+about_me_title: About Seiren
 # about_me_description: This will be displayed under the title.
-about_me_description: 여기는 bySeiren02의 웹사이트입니다!
+about_me_description: 
+안녕하세요. 
+저는 목원대학교 정보통신공학과 21학번 이유민입니다.
+웹 개발자를 꿈꾸며 열심히 달려가는 중입니다!
+취미 생활로 녹음과 더빙을 즐겨하고 있습니다.
+앞으로 더욱 발전하는 모습 보여드리겠습니다!
 
 # SKILLS SECTION
 # show_skills_card:
@@ -42,7 +47,7 @@ about_me_description: 여기는 bySeiren02의 웹사이트입니다!
 # > setting this to false, will omit the Skills section
 show_skills_card: true
 # about_me_title: The will be displayed as the title in the Skills section
-skills_title: Skills
+skills_title: Seiren's Dubbing
 
 # TIMELINE SECTION
 # show_timeline_card:
@@ -81,7 +86,10 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Contact
 # contact_description: This will be displayed under the title.
-contact_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>.
+contact_description:  
+Thank you for visiting Seiren's Dubbing Diary
+You can see more videos through 
+<a class="highlight-link" href="https://www.youtube.com/@_SEIREN_02/videos" target="_blank" rel="noreferrer"> YouTube </a>.
 
 # GITHUB-METADATA
 # Set this to your forked repository
