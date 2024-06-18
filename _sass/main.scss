@@ -301,57 +301,58 @@ a {
         top: -2rem;
       }
     }
-  }
-
-  .email:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorEmail 1s linear forwards;
+    .email:hover {
+      .circle {
+        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+          colorEmail 1s linear forwards;
+      }
+      .social-svg {
+        fill: #007bb6;
+      }
     }
-    .social-svg {
-      fill: #007bb6;
-    }
-  }
-
-  .youtube:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorEmail 1s linear forwards;
-    }
-    .social-svg {
-      fill: #d44638;
-    }
-  }
   
-  .youtube:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorEmail 1s linear forwards;
+    .youtube:hover {
+      .circle {
+        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+          colorEmail 1s linear forwards;
+      }
+      .social-svg {
+        fill: #d44638;
+      }
     }
-    .social-svg {
-      fill: #24db77;
+    
+    .youtube:hover {
+      .circle {
+        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+          colorEmail 1s linear forwards;
+      }
+      .social-svg {
+        fill: #24db77;
+      }
+    }
+  
+    .instagram:hover {
+      .circle {
+        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+          colorLinkedin 1s linear forwards;
+      }
+      .social-svg {
+        fill: #a230ff;
+      }
+    }
+  
+    .kakaotalk:hover {
+      .circle {
+        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+          colorTwitter 1s linear forwards;
+      }
+      .social-svg {
+        fill: #ffdd19;
+      }
     }
   }
 
-  .instagram:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorLinkedin 1s linear forwards;
-    }
-    .social-svg {
-      fill: #a230ff;
-    }
-  }
-
-  .kakaotalk:hover {
-    .circle {
-      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorTwitter 1s linear forwards;
-    }
-    .social-svg {
-      fill: #ffdd19;
-    }
-  }
+  
 
   @keyframes outWaveIn {
     to {
