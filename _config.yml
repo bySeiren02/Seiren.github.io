@@ -34,19 +34,19 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Seiren
 # about_me_description: This will be displayed under the title.
-about_me_description: 
-안녕하세요. 
-저는 목원대학교 정보통신공학과 21학번 이유민입니다.
-웹 개발자를 꿈꾸며 열심히 달려가는 중입니다!
-취미 생활로 녹음과 더빙을 즐겨하고 있습니다.
-앞으로 더욱 발전하는 모습 보여드리겠습니다!
+about_me_description: >
+  안녕하세요. 
+  저는 목원대학교 정보통신공학과 21학번 이유민입니다.
+  웹 개발자를 꿈꾸며 열심히 달려가는 중입니다!
+  취미 생활로 녹음과 더빙을 즐겨하고 있습니다.
+  앞으로 더욱 발전하는 모습 보여드리겠습니다!
 
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
 # > setting this to false, will omit the Skills section
 show_skills_card: true
-# about_me_title: The will be displayed as the title in the Skills section
+# skills_title: The will be displayed as the title in the Skills section
 skills_title: Seiren's Dubbing
 
 # TIMELINE SECTION
@@ -86,17 +86,17 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Contact
 # contact_description: This will be displayed under the title.
-contact_description:  
-Thank you for visiting Seiren's Dubbing Diary
-You can see more videos through 
-<a class="highlight-link" href="https://www.youtube.com/@_SEIREN_02/videos" target="_blank" rel="noreferrer"> YouTube </a>.
+contact_description: >
+  Thank you for visiting Seiren's Dubbing Diary
+  You can see more videos through 
+  <a class="highlight-link" href="https://www.youtube.com/@_SEIREN_02/videos" target="_blank" rel="noreferrer"> YouTube </a>.
 
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
 repository: bySeiren02/bySeiren02.github.io
 projects:
-  # sortby:
+  # sort_by:
   # > set this to pushed, if you want to sort your github repositories by time.
   # > set this to stars, if you want to sort your github repositories by stars.
   sort_by: pushed
@@ -126,11 +126,9 @@ plugins:
   - "jekyll-github-metadata"
 
 exclude:
-  [
-    "_assets",
-    "Gemfile",
-    "Gemfile.lock",
-    "gulpfile.js",
-    "node_modules",
-    "package.json",
-  ]
+  - "_assets"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpfile.js"
+  - "node_modules"
+  - "package.json"
