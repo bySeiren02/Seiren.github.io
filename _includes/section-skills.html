@@ -10,7 +10,22 @@
 
   {% for language in site.data.skills-languages %}
     <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in">
-      {{language.name}}
+      <div class="left">
+        <div class="video">
+          <!-- 여기에 영상 요소를 추가하세요. 예: <iframe> 또는 <video> 태그 -->
+          <iframe src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-title">
+          <!-- 영상 제목을 여기에 넣으세요 -->
+          Video Title
+        </div>
+      </div>
+      <div class="right">
+        <div class="script">
+          <!-- 대본 내용을 여기에 넣으세요 -->
+          {{language.name}}
+        </div>
+      </div>
     </div>
   {% endfor %}
   {% for framework in site.data.skills-frameworks %}
