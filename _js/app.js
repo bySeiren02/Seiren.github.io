@@ -110,18 +110,6 @@ TxtRotate.prototype.tick = function() {
 
 /* Word Cloud */
 
-function randomizeOrder() {
-  var parent = document.getElementById('skills');
-  var divs = parent.getElementsByTagName('div');
-  var frag = document.createDocumentFragment();
-
-  // Randomize order of skills
-  while (divs.length) {
-    frag.appendChild(divs[Math.floor(Math.random() * divs.length)]);
-  }
-  parent.appendChild(frag);
-}
-
 
 function showVideo(type) {
   const video = document.getElementById('video');
