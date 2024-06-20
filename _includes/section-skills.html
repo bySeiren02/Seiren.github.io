@@ -8,49 +8,18 @@
   <input type="radio" id="framework" name="filter" />
   <label class="filter-button neumorphism-button" for="framework">Team</label>
 
-  {% for language in site.data.skills-languages %}
-    <div skill-type="language" skill-weight="{{language.weight}}" data-aos="zoom-in">
-      <div class="left">
-        <div class="video">
-          <iframe src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-title">
-          재혼황후 - 수애
-        </div>
-      </div>
-      <div class="right">
-        대본....
-      </div>
+  <div class="content">
+    <div class="video-section">
+        <video controls>
+            <source src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="video-title">재혼황후 - 수애</h2>
     </div>
-  {% endfor %}
-  {% for framework in site.data.skills-frameworks %}
-    <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
-      <div class="left">
-        <div class="video">
-          <iframe src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-title">
-          재혼황후 - 수애
-        </div>
-      </div>
-      <div class="right">
-        대본....
-      </div>
+    <div class="script-section">
+        <h2>대본</h2>
+        <p>제가 변했다고요?</p>
+        <p>변한건, 폐하이십니다.</p>
     </div>
-  {% endfor %}
-  {% for tool in site.data.skills-tools %}
-    <div skill-type="tool" skill-weight="{{tool.weight}}" data-aos="zoom-in">
-      <div class="left">
-        <div class="video">
-          <iframe src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-title">
-          재혼황후 - 수애
-        </div>
-      </div>
-      <div class="right">
-        대본....
-      </div>
-    </div>
-  {% endfor %}
+  </div>
 </div>
