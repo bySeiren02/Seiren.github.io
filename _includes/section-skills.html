@@ -57,21 +57,24 @@
   }
 </style>
 
-<div id="skills">
-  <div id="button">
-    <input type="radio" id="all" name="filter" checked />
-    <label class="filter-button neumorphism-button" for="all">Personal</label>
-    <input type="radio" id="language" name="filter" />
-    <label class="filter-button neumorphism-button" for="language">Join</label>
-    <input type="radio" id="framework" name="filter" />
-    <label class="filter-button neumorphism-button" for="framework">Team</label>
-  </div>
+<div id="filter-buttons">
+  <input type="radio" id="all" name="filter" checked />
+  <label class="filter-button neumorphism-button" for="all">Personal</label>
+  <input type="radio" id="language" name="filter" />
+  <label class="filter-button neumorphism-button" for="language">Join</label>
+  <input type="radio" id="framework" name="filter" />
+  <label class="filter-button neumorphism-button" for="framework">Team</label>
+</div>
 
+<div id="skills">
   <div id="content" class="content-wrapper">
     <div id="video1" class="content-item">
       <div class="video-info">
         <video controls>
-          <source src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4" type="video/mp4">
+          <source
+            src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4"
+            type="video/mp4"
+          />
         </video>
         <h2>Video Title 1</h2>
       </div>
@@ -80,10 +83,13 @@
       </div>
     </div>
 
-    <div id="video2" class="content-item" style="display: none;">
+    <div id="video2" class="content-item" style="display: none">
       <div class="video-info">
         <video controls>
-          <source src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4" type="video/mp4">
+          <source
+            src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4"
+            type="video/mp4"
+          />
         </video>
         <h2>Video Title 2</h2>
       </div>
@@ -92,10 +98,13 @@
       </div>
     </div>
 
-    <div id="video3" class="content-item" style="display: none;">
+    <div id="video3" class="content-item" style="display: none">
       <div class="video-info">
         <video controls>
-          <source src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4" type="video/mp4">
+          <source
+            src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4"
+            type="video/mp4"
+          />
         </video>
         <h2>Video Title 3</h2>
       </div>
@@ -107,21 +116,21 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     // 버튼 클릭 시 처리
     var allButton = document.getElementById("all");
     var languageButton = document.getElementById("language");
     var frameworkButton = document.getElementById("framework");
 
-    allButton.addEventListener("click", function() {
+    allButton.addEventListener("click", function () {
       showContent("video1");
     });
 
-    languageButton.addEventListener("click", function() {
+    languageButton.addEventListener("click", function () {
       showContent("video2");
     });
 
-    frameworkButton.addEventListener("click", function() {
+    frameworkButton.addEventListener("click", function () {
       showContent("video3");
     });
 
