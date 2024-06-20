@@ -427,6 +427,46 @@ a {
     transition: opacity 0.5s;
   }
 
+  .filter-button {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-wrapper {
+    display: flex;
+  }
+  
+  .content-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .video-info {
+    margin-bottom: 20px;
+  }
+  
+  .video-info h2 {
+    margin-top: 0;
+  }
+  
+  .video-info video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .script {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+
   // div[skill-type="language"] {
   //   color: #e84a5f;
   // }
@@ -464,35 +504,6 @@ a {
   //   line-height: 2.25rem;
   // }
 
-  input[type="radio"] {
-    display: none;
-  }
-
-  .filter-button {
-    display: none;
-  }
-
-
-
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* 왼쪽 정렬 */
-  }
-
-  .video iframe {
-    width: 50px;
-    height: 30px;
-  }
-
-  .video-title {
-    margin-top: 10px;
-    /* 필요에 따라 추가 스타일을 적용하세요 */
-  }
-
-  .right {
-    flex: 1;
-  }
 }
 
 /* Timeline Section */
