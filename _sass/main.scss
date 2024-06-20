@@ -301,54 +301,44 @@ a {
         top: -2rem;
       }
     }
-  }
 
-  .email:hover {
-    .circle {
+    &.email:hover .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorEmail 1s linear forwards;
     }
-    .social-svg {
-      fill: #3877d4;
+    &.email:hover .social-svg {
+      fill: #d44638;
     }
-  }
 
-  .youtube:hover {
-    .circle {
+    &.youtube:hover .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorYoutube 1s linear forwards;
     }
-    .social-svg {
-      fill: #d44638;
+    &.youtube:hover .social-svg {
+      fill: #007bb6;
     }
-  }
 
-  .velog:hover {
-    .circle {
+    &.velog:hover .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorVelog 1s linear forwards;
     }
-    .social-svg {
+    &.velog:hover .social-svg {
       fill: #1ddb73;
     }
-  }
 
-  .instagram:hover {
-    .circle {
+    &.instagram:hover .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorInstagram 1s linear forwards;
     }
-    .social-svg {
+    &.instagram:hover .social-svg {
       fill: #913cff;
     }
-  }
 
-  .kakaotalk:hover {
-    .circle {
+    &.kakaotalk:hover .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorKakaotalk 1s linear forwards;
     }
-    .social-svg {
+    &.kakaotalk:hover .social-svg {
       fill: #e7c814;
     }
   }
@@ -409,6 +399,7 @@ a {
     }
   }
 }
+
 
 /* Skills Section */
 
