@@ -17,48 +17,6 @@
     border-left: 1px solid #ccc;
     padding-left: 20px;
   }
-
-  #skills {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #skills div {
-    padding: 0.2rem;
-    transition: opacity 0.5s;
-  }
-
-  .filter-button {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .content-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .content-item {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    display: none;
-  }
-
-  .content-item.active {
-    display: block;
-  }
 </style>
 
 <div id="skills">
@@ -69,7 +27,7 @@
   </div>
 
   <div id="content" class="content-wrapper">
-    <div id="video1" class="content-item active">
+    <div id="video1" class="content-item">
       <div class="video-info">
         <video controls>
           <source src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4" type="video/mp4">
@@ -81,7 +39,7 @@
       </div>
     </div>
 
-    <div id="video2" class="content-item">
+    <div id="video2" class="content-item" style="display: none;">
       <div class="video-info">
         <video controls>
           <source src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4" type="video/mp4">
@@ -93,7 +51,7 @@
       </div>
     </div>
 
-    <div id="video3" class="content-item">
+    <div id="video3" class="content-item" style="display: none;">
       <div class="video-info">
         <video controls>
           <source src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4" type="video/mp4">
@@ -108,28 +66,28 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var filterButtons = document.querySelectorAll(".filter-button");
-    filterButtons.forEach(function(button) {
-      button.addEventListener("click", function() {
-        filterButtons.forEach(function(btn) {
-          btn.classList.remove("active");
+    document.addEventListener("DOMContentLoaded", function() {
+      var filterButtons = document.querySelectorAll(".filter-button");
+      filterButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+          filterButtons.forEach(function(btn) {
+            btn.classList.remove("active");
+          });
+          button.classList.add("active");
+          var target = button.getAttribute("data-target");
+          showContent(target);
         });
-        button.classList.add("active");
-        var target = button.getAttribute("data-target");
-        showContent(target);
       });
-    });
 
-    function showContent(contentId) {
-      var allContent = document.querySelectorAll(".content-item");
-      allContent.forEach(function(content) {
-        content.classList.remove("active");
-      });
-      var selectedContent = document.getElementById(contentId);
-      if (selectedContent) {
-        selectedContent.classList.add("active");
+      function showContent(contentId) {
+        var allContent = document.querySelectorAll(".content-item");
+        allContent.forEach(function(content) {
+          content.classList.remove("active");
+        });
+        var selectedContent = document.getElementById(contentId);
+        if (selectedContent) {
+          selectedContent.classList.add("active");
+        }
       }
-    }
-  });
-</script>
+    });
+  </script>
