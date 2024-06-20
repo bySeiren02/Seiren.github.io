@@ -741,8 +741,9 @@ a {
     }
     
     .video-section video {
-        max-width: 50%;
+        width: 200px;
         height: auto;
+        margin-right: 20px; /* 여기서 간격 조정 */
     }
     
     .video-title {
