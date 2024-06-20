@@ -416,39 +416,6 @@ a {
 
 /* Skills Section */
 
-#skills {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  div {
-    padding: 0.2rem;
-    transition: opacity 0.5s;
-  }
-
-  .filter-button {
-    margin-right: 10px;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content-wrapper {
-    display: flex;
-  }
-  
-  .content-item {
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-  }
-  
   
 
   // div[skill-type="language"] {
@@ -488,7 +455,7 @@ a {
   //   line-height: 2.25rem;
   // }
 
-}
+
 
 /* Timeline Section */
 
