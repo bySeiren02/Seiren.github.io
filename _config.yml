@@ -1,10 +1,10 @@
-title: Your awesome title
-email: your-email@domain.com
+title: Seiren's Dubbing Diary
+email: byseiren@naver.com
 description: description
 baseurl: /Jekyll-Avalon
-url: http://joshuaavalon.github.io
-twitter_username: joshuaavalon
-github_username:  joshuaavalon
+url: http://bySeiren02.github.io
+twitter_username: seiren
+github_username:  bySeiren02
 
 sass:
   style: compressed
