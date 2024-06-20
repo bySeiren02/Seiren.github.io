@@ -285,14 +285,8 @@ a {
       cursor: pointer;
 
       .circle {
-        animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-          colorBlackIcon 1s linear forwards;
         fill: $text-color;
         fill-opacity: 1;
-      }
-
-      .social-svg {
-        fill: #000;
       }
 
       .label {
@@ -310,6 +304,16 @@ a {
     }
     .social-svg {
       fill: #3877d4;
+    }
+  }
+
+  .github:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+        colorGithub 1s linear forwards;
+    }
+    .social-svg {
+      fill: #000000;
     }
   }
 
@@ -373,7 +377,7 @@ a {
     }
   }
 
-  @keyframes colorBlackIcon {
+  @keyframes colorGitHub {
     to {
       stroke: #000;
     }
