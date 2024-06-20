@@ -1,21 +1,56 @@
 <h1 class="title">{{site.skills_title}}</h1>
 <style>
-  .video-info {
-    margin-bottom: 20px;
-  }
+  #skills {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-  .video-info h2 {
-    margin-top: 0;
-  }
+    div {
+      padding: 0.2rem;
+      transition: opacity 0.5s;
+    }
 
-  .video-info video {
-    width: 30%;
-    height: auto;
-  }
+    .filter-button {
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .content-wrapper {
+      display: flex;
+    }
+    
+    .content-item {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+    
+    .video-info {
+      margin-bottom: 20px;
+    }
 
-  .script {
-    border-left: 1px solid #ccc;
-    padding-left: 20px;
+    .video-info h2 {
+      margin-top: 0;
+    }
+
+    .video-info video {
+      width: 30%;
+      height: auto;
+    }
+
+    .script {
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
   }
 </style>
 
