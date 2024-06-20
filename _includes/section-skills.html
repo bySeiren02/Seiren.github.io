@@ -53,52 +53,44 @@
 </style>
 
 <div id="skills">
-  <div id="filter-buttons">
-    <div class="filter-button active" data-target="video1">Personal</div>
-    <div class="filter-button" data-target="video2">Join</div>
-    <div class="filter-button" data-target="video3">Team</div>
-  </div>
+  <input type="radio" id="all" name="filter" checked />
+  <label class="filter-button neumorphism-button" for="all">Personal</label>
+  <input type="radio" id="language" name="filter" />
+  <label class="filter-button neumorphism-button" for="language">Join</label>
+  <input type="radio" id="framework" name="filter" />
+  <label class="filter-button neumorphism-button" for="framework">Team</label>
 
   <div id="content" class="content-wrapper">
-    <div id="video1" class="content-item active">
+    <div id="video1" class="content-item">
       <div class="video-info">
         <video controls>
-          <source
-            src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4" type="video/mp4">
         </video>
-        <h2>재혼황후 - 수애</h2>
+        <h2>Video Title 1</h2>
       </div>
       <div class="script">
         <p>Script 1 goes here.</p>
       </div>
     </div>
 
-    <div id="video2" class="content-item">
+    <div id="video2" class="content-item" style="display: none;">
       <div class="video-info">
         <video controls>
-          <source
-            src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4" type="video/mp4">
         </video>
-        <h2>오버워치 단편 애니메이션 : 잠입 - 솜브라</h2>
+        <h2>Video Title 2</h2>
       </div>
       <div class="script">
         <p>Script 2 goes here.</p>
       </div>
     </div>
 
-    <div id="video3" class="content-item">
+    <div id="video3" class="content-item" style="display: none;">
       <div class="video-info">
         <video controls>
-          <source
-            src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4" type="video/mp4">
         </video>
-        <h2>발로란트 시네마틱 : 모두가 함께 - 세이지</h2>
+        <h2>Video Title 3</h2>
       </div>
       <div class="script">
         <p>Script 3 goes here.</p>
@@ -108,27 +100,36 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var filterButtons = document.querySelectorAll(".filter-button");
-    filterButtons.forEach(function (button) {
-      button.addEventListener("click", function () {
-        filterButtons.forEach(function (btn) {
-          btn.classList.remove("active");
-        });
-        button.classList.add("active");
-        var target = button.getAttribute("data-target");
-        showContent(target);
-      });
+  document.addEventListener("DOMContentLoaded", function() {
+    // 버튼 클릭 시 처리
+    var allButton = document.getElementById("all");
+    var languageButton = document.getElementById("language");
+    var frameworkButton = document.getElementById("framework");
+
+    allButton.addEventListener("click", function() {
+      showContent("video1");
     });
 
+    languageButton.addEventListener("click", function() {
+      showContent("video2");
+    });
+
+    frameworkButton.addEventListener("click", function() {
+      showContent("video3");
+    });
+
+    // 초기 화면 설정
+    showContent("video1"); // 초기에는 all 버튼에 해당하는 콘텐츠를 보여줌
+
+    // 콘텐츠를 보여주는 함수
     function showContent(contentId) {
       var allContent = document.querySelectorAll(".content-item");
-      allContent.forEach(function (content) {
-        content.classList.remove("active");
-      });
+      for (var i = 0; i < allContent.length; i++) {
+        allContent[i].style.display = "none"; // 모든 콘텐츠를 숨김
+      }
       var selectedContent = document.getElementById(contentId);
       if (selectedContent) {
-        selectedContent.classList.add("active");
+        selectedContent.style.display = "block"; // 선택한 콘텐츠만 보여줌
       }
     }
   });
