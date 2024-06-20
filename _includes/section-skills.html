@@ -12,6 +12,10 @@
     transition: opacity 0.5s;
   }
 
+  #button {
+    width: 80%;
+  }
+
   #filter-buttons {
     display: flex;
     justify-content: center;
@@ -23,7 +27,6 @@
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -59,12 +62,14 @@
 </style>
 
 <div id="skills">
-  <input type="radio" id="all" name="filter" checked />
-  <label class="filter-button neumorphism-button" for="all">Personal</label>
-  <input type="radio" id="language" name="filter" />
-  <label class="filter-button neumorphism-button" for="language">Join</label>
-  <input type="radio" id="framework" name="filter" />
-  <label class="filter-button neumorphism-button" for="framework">Team</label>
+  <div id="button">
+    <input type="radio" id="all" name="filter" checked />
+    <label class="filter-button neumorphism-button" for="all">Personal</label>
+    <input type="radio" id="language" name="filter" />
+    <label class="filter-button neumorphism-button" for="language">Join</label>
+    <input type="radio" id="framework" name="filter" />
+    <label class="filter-button neumorphism-button" for="framework">Team</label>
+  </div>
 
   <div id="content" class="content-wrapper">
     <div id="video1" class="content-item">
