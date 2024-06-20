@@ -128,15 +128,15 @@ function showVideo(type) {
   const videoTitle = document.getElementById('video-title');
   const script = document.getElementById('script');
 
-  if (type === 'personal') {
+  if (type === 'all') {
       video.src = '/assets/video/Y2meta.app - [ 세이렌 ] 재혼황후 - 수애 _성우지망생 더빙.mp4';
       videoTitle.textContent = '네이버웹툰 : 재혼황후 - 수애';
       script.textContent = 'This is the script content for the video 1. It can be multiple paragraphs of text.';
-  } else if (type === 'join') {
+  } else if (type === 'language') {
       video.src = '/assets/video/Y2meta.app-[ 세이렌 ] 오버워치 단편 애니메이션 - 잠입 _ 성우지망생 더빙-(720p60).mp4';
       videoTitle.textContent = '오버워치 단편 애니메이션 : 잠입 - 솜브라';
       script.textContent = 'This is the script content for the video 2. It can be multiple paragraphs of text.';
-  } else if (type === 'team') {
+  } else if (type === 'framework') {
       video.src = '/assets/video/Y2meta.app-【더빙팀 V_L】 발로란트 시네마틱 [모두가 함께] (우리말 더빙)-(720p60).mp4';
       videoTitle.textContent = '발로란트 시네마틱 : 모두가 함께 - 세이지';
       script.textContent = 'This is the script content for the video 3. It can be multiple paragraphs of text.';
