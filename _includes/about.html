@@ -1,12 +1,37 @@
  <div class="user-details">
-  <h1> About Me </h1>
-  <p> {{site.user_description}} </p>
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="/assets/img/myphoto.jpg" alt="photo">
+    </div>
+    <div class="text-content">
+      <h1>About Me</h1>
+      <p>{{site.user_description}}</p>
+    </div>
+  </div>
+  
 <style>
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .image-wrapper {
+    flex: 1;
+    max-width: 50%; 
+  }
+  .image-wrapper img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .text-content {
+    flex: 1;
+    padding: 0 20px; 
+  }
   a {
     text-decoration-color: rgb(198, 198, 221);
     color: inherit;
     transition: background-color 0.4s;
-    padding: 1px 1px; /* 링크 주변 여백 설정 */
+    padding: 0.8px 0.8px; 
     display: inline-block; 
   }
   a:hover {
