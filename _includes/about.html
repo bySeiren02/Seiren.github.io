@@ -99,18 +99,22 @@
     padding-left: 20px; 
   }
 
-  @media only screen and (min-width: 550px) {
+  .image-wrapper img {
+    display: block;
+    height: 300px; /* 모바일 화면에서 기본값으로 설정 */
+    width: auto;
+    padding-left: 0px; /* 모바일 화면에서 기본값으로 설정 */
+  }
+
+  @media only screen and (max-width: 549px) {
     .image-wrapper img {
-      height: 300px;
-      padding-left: 0px;
+      height: 400px; /* 데스크탑 화면에서 높이를 늘림 */
+      padding-left: 20px; /* 데스크탑 화면에서 왼쪽 여백을 추가함 */
     }
   }
 
-  .text-content {
-    flex: 1;
-    padding: 0 20px;
-    padding-bottom: 50px;
-  }
+
+
 
   @media only screen and (min-width: 550px) {
     .text-content {
