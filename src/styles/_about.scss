@@ -54,13 +54,13 @@
   align-items: center;
   padding-left: 50px;
 }
-@media only screen and (min-width: $cut) {
-  .image-wrapper {
-    order: 1; 
-    height: 300px;
-    padding-left: 0px;
-  }
-}
+// @media only screen and (min-width: $cut) {
+//   .image-wrapper {
+//     order: 1; 
+//     height: 300px;
+//     padding-left: 0px;
+//   }
+// }
 
 // .image-wrapper img {
 //   display: block;
