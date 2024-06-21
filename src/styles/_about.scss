@@ -34,4 +34,84 @@
 }
 
 
+.container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: $cut) {
+  .container {
+    flex-direction: row;
+  }
+}
+.image-wrapper {
+  flex: 1;
+  max-width: 40%;
+  align-items: center;
+}
+@media only screen and (min-width: $cut) {
+  .image-wrapper {
+    order: 1; 
+  }
+}
+.image-wrapper img {
+  display: block;
+  height: 400px;
+  width: auto;
+  padding-left: 50px;
+}
+@media only screen and (min-width: $cut) {
+  .image-wrapper img {
+    height: 300px;
+    padding-left: 0px;
+  }
+}
+.text-content {
+  flex: 1;
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: $cut) {
+  .text-content {
+    flex: 1; 
+    order: 2;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+a {
+  text-decoration-color: rgb(198, 198, 221);
+  color: inherit;
+  transition: background-color 0.4s;
+  padding: 0.8px 0.8px;
+  display: inline-block;
+}
+a:hover {
+  background-color: rgb(198, 198, 221);
+}
+a:visited {
+  color: inherit;
+}
+
+.minimage {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: $cut) {
+  .minimage {
+    align-items: center;
+  }
+}
+
+.minimage img {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.user > * {
+  flex: 1; 
+  margin: 20px;
+}
 
