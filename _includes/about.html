@@ -16,12 +16,12 @@
     }
     .image-wrapper {
       flex: 1;
-      max-width: 50%;
+      max-width: 40%;
     }
     .image-wrapper img {
       display: block;
-      width: 200px;
-      height: 300px;
+      max-height: 350px;
+      width: auto;
     }
     .text-content {
       flex: 1;
@@ -40,14 +40,26 @@
     a:visited {
       color: inherit;
     }
+
+    .minimage {
+      display: flex;  /* Use flexbox to align images horizontally */
+    }
+
+    .minimage img {
+      width: 40px;    /* Set width of each image */
+      height: 40px;   /* Set height of each image */
+      margin-right: 5px;  /* Optional: Add some space between images */
+    }
   </style>
 </div>
 <div class="user">
   <div class="tech">
     <h2>Station</h2>
-    <i class="devicon-html5-plain-wordmark"></i>
-    <i class="devicon-bootstrap-plain-wordmark colored"></i>
-    <i class="devicon-sass-original colored"></i>
+    <div class="minimage">
+      <img src="/assets/img/목원대.jpg" alt="목원대" />
+      <img src="/assets/img/녹음실.jpg" alt="녹음실" />
+      <img src="/assets/img/tbn.jpg" alt="tbn" />
+    </div>
     <p>
       저는 목원대학교 방송국 MBS에서 아나운서 부장으로서 3년간 활동하고
       있습니다. TBN 대전 교통방송에서 매주 화요일 4시부터 진행하는 충청매거진의
@@ -57,9 +69,11 @@
   </div>
   <div class="tech">
     <h2>Movie</h2>
-    <i class="devicon-javascript-plain colored"></i>
-    <i class="devicon-react-original-wordmark colored"></i>
-    <i class="devicon-nodejs-plain-wordmark"></i>
+    <div class="minimage">
+      <img src="/assets/img/올빼미.jpg" alt="올빼미" />
+      <img src="/assets/img/더웹툰.jpg" alt="더웹툰" />
+      <img src="/assets/img/보이스.png" alt="보이스" />
+    </div>
     <p>
       저는 영화보는 것을 정말 좋아해요. 특히 범죄, 스릴러, 공포를 사랑한답니다.
       최근에 봤던 것 중 가장 재미있게 본 영화는 <br />
@@ -72,9 +86,11 @@
   </div>
   <div class="tech">
     <h2>Music</h2>
-    <i class="devicon-git-plain"></i>
-    <i class="devicon-gulp-plain colored"></i>
-    <i class="devicon-atom-original-wordmark"></i>
+    <div class="minimage">
+      <img src="/assets/img/블랙핑크.jpg" alt="블랙핑크" />
+      <img src="/assets/img/벤슨분.jpg" alt="벤슨분" />
+      <img src="/assets/img/용용.jpg" alt="용용" />
+    </div>
     <p>
       저는 팝송과 가요 뿐만 아니라 뉴에이지, 클래식, 넘버, EMO 힙합, J-pop, EDM
       등 다양한 음악을 좋아해요. 요즘은 특히 EMO 장르가 더 끌리는 것 같은데요.
