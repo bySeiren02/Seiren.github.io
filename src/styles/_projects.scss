@@ -45,6 +45,7 @@
 }
 .images-right {
   @media only screen and (min-width: $cut) {
+    margin-top: -5%;
     float: right;
     width: 48%;
   }
