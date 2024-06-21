@@ -13,8 +13,8 @@
 .user-projects {
   margin: 20px auto;
   img {
-    width: 200px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
   }
   h5 {
@@ -47,7 +47,8 @@
 .images-right {
   @media only screen and (min-width: $cut) {
     float: right;
-    width: 48%;
+    width: 200px;
+    height: 160px;
   }
 
   img {
