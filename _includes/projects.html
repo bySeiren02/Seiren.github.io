@@ -27,15 +27,23 @@
     padding: 10px; 
     box-shadow: 0 0 15px rgb(244, 244, 250);
   }
-        /* 스크롤 바 숨기기 (웹킷 기반 브라우저) */
-        .script::-webkit-scrollbar {
-            display: none;
-        }
+  .script::-webkit-scrollbar {
+    display: none;
+  }
+  .script {
+    scrollbar-width: none; /* Firefox */
+  }
+  .images-right img, .images-right video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .images-right video {
+    display: none; /* 초기에는 비디오를 숨김 */
+  }
 
-        /* 스크롤 바 숨기기 (Firefox) */
-        .script {
-            scrollbar-width: none; /* Firefox */
-        }
 </style>
 <div class="user-projects">
   <div class="images-right">
@@ -45,7 +53,6 @@
         Your browser does not support the video tag.
     </video>
   </div>
-</div>
   <div class="contents">
     <h3>네이버 시리즈 : 재혼황후 - 수애</h3>
     <h4>Script</h4>
@@ -61,6 +68,15 @@
     </p>
     <a class="project-link" href="https://youtu.be/67kDlmRsr3c?si=fSicWyamJDgC87tH" target="_blank">Watch on YouTube</a>
   </div>
+  <script>
+    function playVideo() {
+        var img = document.querySelector('.images-right img');
+        var video = document.getElementById('video');
+        img.style.display = 'none';
+        video.style.display = 'block';
+        video.play();
+    }
+</script>
 </div>
 <div class="user-projects">
   <div class="images-left">
