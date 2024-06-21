@@ -37,7 +37,7 @@
 </style>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="suae" src="/assets/img/suae.jpg" onclick="playVideo('video-suae')" />
+    <img alt="suae" src="/assets/img/suae.jpg" onclick="playVideo('video-suae', this)" />
             <video id="video-suae" controls style="display: none;">
                 <source src="/assets/video/수애.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -226,12 +226,16 @@
 </div>
 
 <script>
-  function playVideo(videoId) {
+  function playVideo(videoId, imgElement) {
       var video = document.getElementById(videoId);
-      var img = video.previousElementSibling;
 
-      img.style.display = 'none';
+      imgElement.style.display = 'none';
       video.style.display = 'block';
       video.play();
+
+      video.onended = function() {
+          video.style.display = 'none';
+          imgElement.style.display = 'block';
+      };
   }
 </script>
