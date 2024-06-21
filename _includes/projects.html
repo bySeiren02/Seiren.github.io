@@ -3,7 +3,7 @@
 </div>
 <style>
   .images-right {
-    margin-top: 35px; 
+    margin-top: 40px; 
   }
   .content {
     padding-bottom: 10px;
@@ -33,27 +33,15 @@
   .script {
     scrollbar-width: none; /* Firefox */
   }
-
-
-  .video {
-    height: 350px;
-    width: auto;
-  }
-  
-  @media only screen and (min-width: 550px) {
-    .video {
-      float: right;
-    }
-  }
   
 </style>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="suae" src="/assets/img/suae.jpg" onclick="playVideo()" />
-    <!-- <video class="video" controls>
-        <source src="/assets/video/수애.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video> -->
+    <img alt="suae" src="/assets/img/suae.jpg" onclick="playVideo('video-suae')" />
+            <video id="video-suae" controls style="display: none;">
+                <source src="/assets/video/수애.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
   </div>
   <div class="contents">
     <h3>네이버 시리즈 : 재혼황후 - 수애</h3>
@@ -237,3 +225,13 @@
   </div>
 </div>
 
+<script>
+  function playVideo(videoId) {
+      var video = document.getElementById(videoId);
+      var img = video.previousElementSibling;
+
+      img.style.display = 'none';
+      video.style.display = 'block';
+      video.play();
+  }
+</script>
