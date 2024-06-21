@@ -68,57 +68,51 @@
 </div>
 <style>
   .container {
-    flex-direction: row;
-    display: flex;
+  padding-top: 100px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 수평으로 가운데 정렬 */
+  text-align: center;
+}
+
+@media only screen and (max-width: 549px) {
+  .container {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
   }
-  @media only screen and (max-width: 549px) {
-    .container {
-      padding-top: 100px;
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      text-align: center;
-    }
-  }
+}
+
+.image-wrapper {
+  flex: 1;
+  align-items: center;
+  max-width: 40%;
+  display: flex;
+  justify-content: center; /* 수평으로 가운데 정렬 */
+}
+
+@media only screen and (max-width: 549px) {
   .image-wrapper {
-    flex: 1;
-    align-items: center;
-    max-width: 40%;
-    display: block;
+    order: 1; 
+    height: 300px;
+    padding-left: 0px;
   }
-  @media only screen and (max-width: 549px) {
-    .image-wrapper {
-      align-items: center;
-      order: 1; 
-      height: 300px;
-      padding-left: 0px;
-    }
-  }
+}
 
+.image-wrapper img {
+  display: block;
+  margin: 0 auto; /* 이미지 가운데 정렬 */
+  height: 300px; /* 모바일 화면에서 기본값으로 설정 */
+  width: auto;
+  padding-left: 0px; /* 모바일 화면에서 기본값으로 설정 */
+}
+
+@media only screen and (min-width: 550px) {
   .image-wrapper img {
-    align-items: center;
-    display: block;
-    height: 400px;
-    width: auto;
-    padding-left: 20px; 
+    height: 400px; /* 데스크탑 화면에서 높이를 늘림 */
+    padding-left: 20px; /* 데스크탑 화면에서 왼쪽 여백을 추가함 */
   }
-
-  .image-wrapper img {
-    align-items: center;
-    display: block;
-    height: 300px; /* 모바일 화면에서 기본값으로 설정 */
-    width: auto;
-    padding-left: 0px; /* 모바일 화면에서 기본값으로 설정 */
-  }
-
-  @media only screen and (min-width: 550px) {
-    .image-wrapper img {
-      height: 400px; /* 데스크탑 화면에서 높이를 늘림 */
-      padding-left: 20px; /* 데스크탑 화면에서 왼쪽 여백을 추가함 */
-    }
-  }
+}
 
 
 
@@ -146,24 +140,18 @@
   }
 
   .minimage {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 이미지를 수평으로 가운데 정렬 */
+}
 
-  .minimage img {
-    width: 80px;
-    height: 80px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  @media only screen and (max-width: 549px) {
-    .minimage img {
-      width: 50px;
-      height: 50px;
-      margin-left: 3px;
-      margin-right: 3px;
-    }
-  }
+.minimage img {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
   .user > * {
     flex: 1; 
     margin: 20px;
