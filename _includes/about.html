@@ -69,13 +69,13 @@
 <style>
 
   .container {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     align-items: center;
   }
   @media only screen and (min-width: 550px) {
     .container {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
   .image-wrapper {
@@ -85,7 +85,6 @@
   }
   @media only screen and (min-width: 550px) {
     .image-wrapper {
-      flex: 1;
       order: 1; 
     }
   }
@@ -97,9 +96,8 @@
   }
   @media only screen and (min-width: 550px) {
     .image-wrapper img {
-      display: block;
       height: 300px;
-      width: auto;
+      padding-left: 0px;
     }
   }
   .text-content {
@@ -133,6 +131,11 @@
   .minimage {
     display: flex;
     align-items: center;
+  }
+  @media only screen and (min-width: 550px) {
+    .minimage {
+      align-items: center;
+    }
   }
 
   .minimage img {
