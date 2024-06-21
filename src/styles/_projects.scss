@@ -45,16 +45,19 @@
 }
 .images-right {
   @media only screen and (min-width: $cut) {
-    padding-top: 20px;
     float: right;
     width: 48%;
+    margin-top: 20px; /* 이미지의 위쪽 여백 추가 */
   }
+
   img {
     @media only screen and (min-width: $cut) {
       float: right;
+      margin-top: 20px; /* 이미지의 위쪽 여백 추가 */
     }
   }
 }
+
 
 .images-left {
   @media only screen and (min-width: $cut) {
