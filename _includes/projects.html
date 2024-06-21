@@ -22,33 +22,14 @@
     border: 0.1px solid rgb(154, 154, 202); /* Optional: 경계선 추가 */
     padding: 10px; /* Optional: 패딩 추가 */
   }
-  .script::-webkit-scrollbar {
-    width: 12px; /* 스크롤 바의 너비 */
-  }
+        /* 스크롤 바 숨기기 (웹킷 기반 브라우저) */
+        .script::-webkit-scrollbar {
+            display: none;
+        }
 
-  .script::-webkit-scrollbar-track {
-    background: #f1f1f1; /* 스크롤 바 트랙 배경색 */
-    border-radius: 6px; /* 동그랗게 만들기 위해 반지름 설정 */
-  }
-
-  .script::-webkit-scrollbar-thumb {
-    background: #888; /* 스크롤 바의 색상 */
-    border-radius: 6px; /* 동그랗게 만들기 위해 반지름 설정 */
-    transition: background 0.3s ease; /* 부드럽게 움직이도록 전환 효과 추가 */
-  }
-
-  .script::-webkit-scrollbar-thumb:hover {
-    background: #555; /* 스크롤 바를 호버할 때의 색상 */
-  }
-
-        /* Firefox 스타일링 */
-  .script {
-    scrollbar-width: thin; /* "auto" or "thin" */
-    scrollbar-color: #888 #f1f1f1; /* 스크롤 바 색상과 트랙 색상 */
-  }
-
-  .script {
-            scroll-behavior: smooth;
+        /* 스크롤 바 숨기기 (Firefox) */
+        .script {
+            scrollbar-width: none; /* Firefox */
         }
 </style>
 <div class="user-projects">
