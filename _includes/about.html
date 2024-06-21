@@ -8,83 +8,6 @@
       <p>{{site.user_description}}</p>
     </div>
   </div>
-
-  <style>
-
-    .container {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-
-      @media only screen and (min-width: 550px) {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-      }
-    }
-    .image-wrapper {
-      flex: 1;
-      max-width: 40%;
-      align-items: center;
-      @media only screen and (min-width: 550px) {
-        flex: 1;
-        order: 1; 
-      }
-    }
-    .image-wrapper img {
-      display: block;
-      height: 400px;
-      width: auto;
-      padding-left: 50px;
-
-      @media only screen and (min-width: 550px) {
-        display: block;
-        height: 300px;
-        width: auto;
-      }
-    }
-    .text-content {
-      flex: 1;
-      padding: 0 20px;
-      padding-bottom: 50px;
-      @media only screen and (min-width: 550px) {
-        flex: 1; 
-        order: 2;
-        text-align: left;
-        padding-left: 20px;
-      }
-    }
-    a {
-      text-decoration-color: rgb(198, 198, 221);
-      color: inherit;
-      transition: background-color 0.4s;
-      padding: 0.8px 0.8px;
-      display: inline-block;
-    }
-    a:hover {
-      background-color: rgb(198, 198, 221);
-    }
-    a:visited {
-      color: inherit;
-    }
-
-    .minimage {
-      display: flex;
-      align-items: center;
-    }
-
-    .minimage img {
-      width: 80px;
-      height: 80px;
-      margin-left: 5px;
-      margin-right: 5px;
-    }
-    .user > * {
-      flex: 1; 
-      margin: 20px;
-    }
-
-  </style>
 </div>
 <div class="user">
   <div class="tech">
@@ -143,3 +66,84 @@
     </p>
   </div>
 </div>
+<style>
+
+  .container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+  @media only screen and (min-width: 550px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .image-wrapper {
+    flex: 1;
+    max-width: 40%;
+    align-items: center;
+  }
+  @media only screen and (min-width: 550px) {
+    .image-wrapper {
+      flex: 1;
+      order: 1; 
+    }
+  }
+  .image-wrapper img {
+    display: block;
+    height: 400px;
+    width: auto;
+    padding-left: 50px;
+  }
+  @media only screen and (min-width: 550px) {
+    .image-wrapper img {
+      display: block;
+      height: 300px;
+      width: auto;
+    }
+  }
+  .text-content {
+    flex: 1;
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+
+  @media only screen and (min-width: 550px) {
+    .text-content {
+      flex: 1; 
+      order: 2;
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+  a {
+    text-decoration-color: rgb(198, 198, 221);
+    color: inherit;
+    transition: background-color 0.4s;
+    padding: 0.8px 0.8px;
+    display: inline-block;
+  }
+  a:hover {
+    background-color: rgb(198, 198, 221);
+  }
+  a:visited {
+    color: inherit;
+  }
+
+  .minimage {
+    display: flex;
+    align-items: center;
+  }
+
+  .minimage img {
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .user > * {
+    flex: 1; 
+    margin: 20px;
+  }
+
+</style>
