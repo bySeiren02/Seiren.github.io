@@ -32,6 +32,7 @@
 .contents {
   @media only screen and (min-width: $cut) {
     margin-left: 0;
+    margin-top: -5%;
     width: 48%;
   }
 }
@@ -47,13 +48,11 @@
   @media only screen and (min-width: $cut) {
     float: right;
     width: 48%;
-    margin-top: 20px; /* 이미지의 위쪽 여백 추가 */
   }
 
   img {
     @media only screen and (min-width: $cut) {
       float: right;
-      margin-top: 20px; /* 이미지의 위쪽 여백 추가 */
     }
   }
 }
