@@ -27,24 +27,10 @@
   }
 }
 
-.user > * {
-  flex: 0 1 calc(30% - 20px); /* 가로 일정 비율 조정, 여백 고려 */
-  margin-bottom: 20px; /* 아래 여백 추가 */
-}
 
 .user-details {
   text-align: center;
   margin: 5px auto;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: background-color 0.3s;
-}
-a:hover {
-  background-color: rgb(167, 169, 199);
-}
-a:visited {
-  color: inherit;
-}
+
